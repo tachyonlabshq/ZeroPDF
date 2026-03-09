@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "tool_schema_version": "1.0.0",
+  "contract_version": "2026.03",
+  "target_dir": "/Users/michaelwong/Developer/ZeroPDF/distribution/public-package",
+  "copied_binaries": {
+    "zeropdf-macos-arm64": true,
+    "zeropdf-macos-x64": true,
+    "zeropdf-windows-x64.exe": true,
+    "zeropdf-windows-arm64.exe": false
+  },
+  "missing_binaries": [
+    "zeropdf-windows-arm64.exe"
+  ]
+}

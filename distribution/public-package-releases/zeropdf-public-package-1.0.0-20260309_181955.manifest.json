@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "bundle_name": "zeropdf-public-package-1.0.0-20260309_181955",
+  "tool_schema_version": "1.0.0",
+  "contract_version": "2026.03",
+  "artifacts": [
+    "/Users/michaelwong/Developer/ZeroPDF/distribution/public-package-releases/zeropdf-public-package-1.0.0-20260309_181955.tar.gz",
+    "/Users/michaelwong/Developer/ZeroPDF/distribution/public-package-releases/zeropdf-public-package-1.0.0-20260309_181955.zip",
+    "/Users/michaelwong/Developer/ZeroPDF/distribution/public-package-releases/zeropdf-public-package-1.0.0-20260309_181955.SHA256SUMS.txt"
+  ]
+}

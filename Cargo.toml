@@ -1,0 +1,25 @@
+[package]
+name = "zeropdf"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+anyhow = "1.0.102"
+lopdf = "0.39.0"
+pdfplumber = "0.2.0"
+regex = "1.12.3"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+sha2 = "0.10.9"
+thiserror = "2.0.18"
+
+[dev-dependencies]
+tempfile = "3.26.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = "symbols"
+panic = "abort"
