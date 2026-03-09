@@ -20,12 +20,12 @@ jobs:
       matrix:
         include:
           - platform: macos-arm64
-            runner: macos-14
+            runner: macos-15
             build_kind: native
             target: aarch64-apple-darwin
             binary_path: target/release/zeropdf
           - platform: macos-x64
-            runner: macos-13
+            runner: macos-15-intel
             build_kind: native
             target: x86_64-apple-darwin
             binary_path: target/release/zeropdf
@@ -51,7 +51,9 @@ jobs:
 
       - name: Set up cargo-xwin
         if: matrix.build_kind == 'xwin'
-        uses: taiki-e/install-action@cargo-xwin
+        uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-xwin
 
       - name: Build native binary
         if: matrix.build_kind == 'native'
