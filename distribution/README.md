@@ -26,3 +26,25 @@ Outputs:
 - `*.zip`
 - `*.SHA256SUMS.txt`
 - `*.manifest.json`
+
+## Platform-Specific Skill Zips
+
+Build a single zip that already contains the final `ZeroPDF/` folder for one platform:
+
+```bash
+python3 scripts/build_platform_bundle.py \
+  --platform macos-arm64 \
+  --binary-path target/release/zeropdf \
+  --output-root distribution/platform-bundles
+```
+
+Each zip contains:
+
+- `ZeroPDF/README.md`
+- `ZeroPDF/SKILL.md`
+- `ZeroPDF/mcp.json`
+- `ZeroPDF/bin/zeropdf` or `ZeroPDF/bin/zeropdf.exe`
+
+The GitHub Actions workflow for this path is:
+
+- [platform-bundles.yml](/Users/michaelwong/Developer/ZeroPDF/.github/workflows/platform-bundles.yml)
